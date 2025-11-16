@@ -52,7 +52,7 @@ const Index = () => {
             <Button size="lg" className="bg-white text-tsu-primary hover:bg-white/90 font-semibold px-8" onClick={() => scrollToSection('programs')}>
               Выбрать программу
             </Button>
-            <Button size="lg" className="bg-tsu-secondary text-white hover:bg-tsu-primary font-semibold px-8" onClick={() => scrollToSection('business')}>
+            <Button size="lg" className="bg-tsu-coral text-white hover:bg-tsu-coral/90 font-semibold px-8" onClick={() => scrollToSection('business')}>
               Для бизнеса и госпартнеров
             </Button>
           </div>

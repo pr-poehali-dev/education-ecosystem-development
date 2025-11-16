@@ -39,6 +39,7 @@
     --tsu-primary: #1e3c72;
     --tsu-secondary: #2a5298;
     --tsu-light: #4a76c6;
+    --tsu-coral: #ff6b6b;
     --tsu-text: #333333;
     --tsu-text-secondary: #666666;
     --tsu-bg-light: #f8f9fa;
@@ -115,7 +116,11 @@
 
 @layer utilities {
   .tsu-gradient {
-    background: linear-gradient(135deg, #ff6b6b 0%, #ffe66d 50%, #4ecdc4 100%);
+    background: linear-gradient(
+      135deg,
+      var(--tsu-primary) 0%,
+      var(--tsu-secondary) 100%
+    );
   }
 
   .animate-fade-in {

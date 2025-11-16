@@ -66,6 +66,7 @@ export default {
 					primary: '#1E3C72',
 					secondary: '#2A5298',
 					light: '#4A76C6',
+					coral: '#FF6B6B',
 					text: '#333333',
 					'text-secondary': '#666666',
 					'bg-light': '#F8F9FA'
