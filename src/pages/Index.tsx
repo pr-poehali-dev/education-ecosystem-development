@@ -48,10 +48,16 @@ const Index = () => {
           <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto">
             Создаем образовательные системы для лидеров новой цифровой эпохи
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="bg-white text-tsu-primary hover:bg-white/90 font-semibold px-8" onClick={() => scrollToSection('programs')}>
-              Выбрать программу
-            </Button>
+          <div className="flex flex-wrap gap-4 justify-center items-start">
+            <div className="relative group">
+              <Button size="lg" className="bg-white text-tsu-primary hover:bg-white/90 font-semibold px-8" onClick={() => scrollToSection('programs')}>
+                Выбрать программу
+              </Button>
+              <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:-translate-y-2">
+                <Icon name="MoveDown" className="text-tsu-coral animate-bounce" size={32} />
+                <span className="text-tsu-coral font-semibold text-sm mt-1 whitespace-nowrap">для карьерного рывка</span>
+              </div>
+            </div>
             <Button size="lg" className="bg-tsu-coral text-white hover:bg-tsu-coral/90 font-semibold px-8" onClick={() => scrollToSection('business')}>
               Для бизнеса и госпартнеров
             </Button>
@@ -166,39 +172,39 @@ const Index = () => {
             Создаем системы, а не просто курсы
           </h2>
           <p className="text-center text-tsu-text-secondary text-lg mb-16 max-w-3xl mx-auto">
-            Наш подход объединяет науку, технологии и практику для создания целостных образовательных экосистем
+            Подход ТГУ объединяет науку, технологии и практику для создания целостных образовательных экосистем
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all text-left">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-4xl">🧠</span>
                 <span className="text-3xl">⚙️</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-tsu-primary">Academic AI</h3>
-              <p className="text-tsu-text-secondary leading-relaxed">
+              <h3 className="text-2xl font-bold mb-3 text-tsu-primary text-left">Academic AI</h3>
+              <p className="text-tsu-text-secondary leading-relaxed text-left">
                 Научный ИИ для глубины. Алгоритмы на исследованиях ТГУ анализируют когнитивные профили и оценивают реальные навыки.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all text-left">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-4xl">🧩</span>
                 <span className="text-3xl">🌐</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-tsu-secondary">EdDev</h3>
-              <p className="text-tsu-text-secondary leading-relaxed">
+              <h3 className="text-2xl font-bold mb-3 text-tsu-secondary text-left">EdDev</h3>
+              <p className="text-tsu-text-secondary leading-relaxed text-left">
                 Разработка образовательных систем. Проектируем и внедряем целостные среды развития вместо разрозненных курсов.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all">
+            <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all text-left">
               <div className="flex items-center gap-3 mb-4">
                 <span className="text-4xl">🔗</span>
                 <span className="text-3xl">🏗️</span>
               </div>
-              <h3 className="text-2xl font-bold mb-3 text-tsu-light">Интегратор</h3>
-              <p className="text-tsu-text-secondary leading-relaxed">
+              <h3 className="text-2xl font-bold mb-3 text-tsu-light text-left">Интегратор</h3>
+              <p className="text-tsu-text-secondary leading-relaxed text-left">
                 Синтез науки, бизнеса и государства. Объединяем разнородные элементы в работающие экосистемы с измеримым результатом.
               </p>
             </div>
