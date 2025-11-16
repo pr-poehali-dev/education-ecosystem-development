@@ -115,11 +115,7 @@
 
 @layer utilities {
   .tsu-gradient {
-    background: linear-gradient(
-      135deg,
-      var(--tsu-primary) 0%,
-      var(--tsu-secondary) 100%
-    );
+    background: linear-gradient(135deg, #ff6b6b 0%, #ffe66d 50%, #4ecdc4 100%);
   }
 
   .animate-fade-in {
