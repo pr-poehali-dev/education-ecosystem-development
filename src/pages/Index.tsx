@@ -43,20 +43,17 @@ const Index = () => {
         
         <div className="container mx-auto text-center relative z-10 animate-fade-in">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            ДПО ТГУ. Обучение для роста: <br />карьеры, бизнеса, страны.
+            ДПО ТГУ. Обучение для роста: <br />карьеры, бизнеса, страны
           </h1>
           <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto">
-            Создаем образовательные системы для лидеров новой цифровой эпохи.
+            Создаем образовательные системы для лидеров новой цифровой эпохи
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="bg-white text-tsu-primary hover:bg-white/90 font-semibold" onClick={() => scrollToSection('programs')}>
+            <Button size="lg" className="bg-white text-tsu-primary hover:bg-white/90 font-semibold px-8" onClick={() => scrollToSection('programs')}>
               Выбрать программу
             </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-tsu-primary font-semibold" onClick={() => scrollToSection('business')}>
-              Для бизнеса
-            </Button>
-            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-tsu-primary font-semibold" onClick={() => scrollToSection('government')}>
-              Для государства
+            <Button size="lg" className="bg-tsu-secondary text-white hover:bg-tsu-primary font-semibold px-8" onClick={() => scrollToSection('business')}>
+              Для бизнеса и госпартнеров
             </Button>
           </div>
         </div>
